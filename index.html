@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MonthlyBudgetPlanner</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/spendsLogic.js"></script>
+    </head>
+    <body>
+
+        <div class="frontBanner">
+            <img src="img/mountain1.jpg" alt="Welcome to Planner">
+            <!-- <h1>Welcome to Planner</h1>
+            <h2>budgeting made simple</h2> -->
+        </div>
+
+
+        <div class="container1">
+            <div class="incomeArea">
+                <p>declare your monthly income here!</p>
+    
+                <form id="incomeForm" onsubmit="saveIncome()">
+                    <label for="monthlyIncome">MY MONTHLY EARNINGS </label><br>
+                    <input type="text" id="monthlyIncome" name="monthlyIncome" ><br>
+                    <button class="glow-on-hover" id="saveIncomeBtn">Save Income</button><br><br>
+                </form>
+            </div>
+    
+            <div class="spendsArea">
+                <p>Add your monthly spends here to have an overall idea!</p>
+                <form id="spendsForm" onsubmit="addSpend()">
+                    <label for="spendName">SPEND</label><br>
+                    <input type="text" id="spendName" name="spendName"><br>
+                    
+                    <label for="spendAmt">AMOUNT</label><br>
+                    <input type="text" id="spendAmt" name="spendAmt"><br>
+    
+                    <button class="glow-on-hover" id="addSpendBtn">Add Spend</button><br><br>
+                </form> 
+            </div>
+        </div>
+
+        <!-- <div class="tableOfSpends"> 
+            <table>
+                <th>Index</th>
+                <th>Spend</th>
+                <th>Amount</th>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div> --> 
+
+        
+        <div class="container2">
+            <div id=incomeData>
+                <h2>MONTHLY EARNINGS RECORDED</h2>
+                <h1></h1>
+            </div>
+    
+            <div id=funds>
+                <h2>AVAILABLE FUNDS</h2>
+                <h1 id="fundsLeft"></h1>
+            </div>
+    
+            <div class="tablearea" id="spendstabledv">
+                <h2>Table of Spends</h3>
+                <table id="spendsTable" class="styled-table">
+                    <tr>
+                        <th>Spend Id</th>
+                        <th>Spend Name</th>
+                        <th>Spend Amount</th>
+                    </tr>        
+                </table>
+            </div>
+
+        </div>
+
+
+        
+        
+
+        <!-- <div id="spendData">
+            Added Spends:
+            <pre></pre>
+        </div> -->
+
+
+
+        <div class="footerarea">
+            Code credits | Mayank Singh Rathore 
+        </div>
+    </body>
+
+</html>
